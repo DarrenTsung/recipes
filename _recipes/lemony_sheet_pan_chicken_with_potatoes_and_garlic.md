@@ -1,4 +1,6 @@
-# Lemony Sheet Pan Chicken with Potatoes and Garlic
+---
+title: Lemony Sheet Pan Chicken with Potatoes and Garlic
+---
 
 Adapted from: https://www.youtube.com/watch?v=3b4cyBEvUPE.
 

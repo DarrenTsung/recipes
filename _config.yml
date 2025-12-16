@@ -1,0 +1,22 @@
+title: Recipes
+description: A collection of recipes I like
+theme: minima
+
+# Exclude files from the site
+exclude:
+  - CLAUDE.md
+  - README.md
+
+# Set up recipes as a collection
+collections:
+  recipes:
+    output: true
+    permalink: /:name
+
+# Default front matter for recipes
+defaults:
+  - scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: "page"

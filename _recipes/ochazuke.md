@@ -1,10 +1,12 @@
-# Ochazuke
+---
+title: Ochazuke
+---
 
 Adapted from: https://www.justonecookbook.com/ochazuke/
 
 ## Ingredients:
 
-- 1 fillet [baked salmon](baked_salmon.md), flaked into bite-size pieces
+- 1 fillet [baked salmon](/baked_salmon), flaked into bite-size pieces
 - 1 cup cooked Japanese short-grain rice
 - 1 tsp bubu arare (crispy puffed rice pellets) or crushed Japanese rice crackers
 - 1 tsp shredded nori seaweed

@@ -1,4 +1,6 @@
-# Cabbage Charred with Garlic
+---
+title: Cabbage Charred with Garlic
+---
 
 Bắp Cải Xào Tỏi
 

@@ -1,4 +1,6 @@
-# Baked Salmon
+---
+title: Baked Salmon
+---
 
 ## Ingredients:
 
