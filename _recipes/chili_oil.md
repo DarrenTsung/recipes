@@ -12,7 +12,8 @@ Makes a small batch (enough to fill 1 mason jar)
 
 ## Ingredients:
 
-- 250ml grapeseed oil
+### Dried
+
 - 2 bay leaves
 - 3 star anise
 - 13 whole cloves
@@ -22,8 +23,12 @@ Makes a small batch (enough to fill 1 mason jar)
 - 3 dried sand ginger nuggets
 - 1 cassia cinnamon stick
 - 1.5 tbsp Sichuan peppercorns
+
+- 250ml grapeseed oil
+
 - 31g Plus Green Natural Sichuan Chili Flakes (Medium Hot)
-- ¼ tsp salt
+
+- ¼ tsp salt (optional)
 
 ## Instructions:
 
@@ -39,7 +44,7 @@ Makes a small batch (enough to fill 1 mason jar)
 3. **Finish:**
    - Raise heat to 330°F until garlic and shallots are brown.
    - Pour hot oil over chili flakes.
-   - Stir in salt.
+   - (optional) Stir in salt.
 
 ## Notes:
 
