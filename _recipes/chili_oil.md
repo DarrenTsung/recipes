@@ -18,7 +18,7 @@ Makes a small batch (enough to fill 1 mason jar)
 - 3 star anise
 - 13 whole cloves
 - 1 tsp whole cardamom
-- 1 shallot
+- 1 shallot (or 1 tbsp dried shallots from penzeys)
 - 3 large cloves of garlic
 - 3 dried sand ginger nuggets
 - 1 cassia cinnamon stick
@@ -36,6 +36,8 @@ Makes a small batch (enough to fill 1 mason jar)
 
    - Add oil and all aromatics (bay leaves, star anise, cloves, cardamom, shallot, garlic, sand ginger, cinnamon, Sichuan peppercorns) to a 1qt pot.
    - Heat at ~230°F for 1 hour 20 minutes.
+   - Note 1: Once the liquid evaporates, temp can rise quickly, be careful.
+   - Note 2: That's the 2\* setting on my induction stove-top.
 
 2. **Prepare chili flakes:**
 
@@ -45,7 +47,3 @@ Makes a small batch (enough to fill 1 mason jar)
    - Raise heat to 330°F until garlic and shallots are brown.
    - Pour hot oil over chili flakes.
    - (optional) Stir in salt.
-
-## Notes:
-
-- Once the liquid evaporates, temp can rise quickly—watch carefully.
