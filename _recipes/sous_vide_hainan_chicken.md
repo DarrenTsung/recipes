@@ -22,15 +22,13 @@ title: Sous Vide Hainan Chicken
 ## Instructions:
 
 1. Combine chicken, bones, salt, water, bouillon, ginger, garlic, and scallions in a bag.
-2. Sous vide ~3 hrs at 150°F. (Earlier batches ran 2.5 hrs at 155°F — 150°F is the keeper.)
-3. Ice water bath 20 min, then slice.
+2. Sous vide ~3 hrs at 150°F. 
+3. Chicken into ice water bath 20 min, then slice.
 4. Strain the bag liquid for stock. Use ½ stock + water to the 2.25 level for 2 cups white rice. (Looks like a bit over, but don't worry.)
 
 ## Notes:
 
 - Need a better filter for straining the stock.
-- Maybe add a bay leaf to the bag next time?
-- Salt has crept down over time (started at 11–13g) — 12g for ~600g chicken is the sweet spot.
 
 ## Log:
 
