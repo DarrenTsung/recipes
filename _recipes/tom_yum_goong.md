@@ -10,16 +10,28 @@ title: Tom Yum Goong
 
 - 4 cups shrimp stock (recipe below) or unsalted chicken stock
 - 12-15 medium or large shrimp, head-on shell-on if making stock
+
 - 2 stalks lemongrass, bottom half only, smashed and cut into 2-inch pieces
 - 6 makrut lime leaves, twisted to bruise and torn, center ribs removed
 - 8 slices galangal
 - 2 Thai chilies, sliced
 - 7 oz oyster mushrooms, torn into bite-sized pieces (or shimeji, enoki, fresh shiitake, straw)
+(Optional)
+- Napa Cabbage
+- Tofu
+
 - ¼ cup nam prik pao (Thai chili paste — I used Maepranom brand from Amazon)
 - 3 Tbsp fish sauce
 - ½ cup fresh lime juice
 - 1 tsp sugar
+(Optional)
+- Fish cake
+- Bok choy
+- Thinly sliced yellow squash / zucchini
+
 - Chopped cilantro (or sawtooth coriander), for garnish
+- Chopped green onion
+
 - Jasmine rice or rice noodles (I used 2 bundles of mei fun for Tiffany + I), for serving
 
 ### For the shrimp stock:
