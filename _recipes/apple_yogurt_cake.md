@@ -4,7 +4,7 @@ title: Apple Yogurt Cake
 
 ## Notes
 
-Instructions inferred (none given with the original ingredient list). Small batch, fits a 6" round or mini loaf pan.
+Bake: 350°F, 25–30 min. Mixing steps and pan size inferred (small batch, fits a 6" round or mini loaf pan).
 
 ## Ingredients:
 
@@ -34,5 +34,5 @@ Instructions inferred (none given with the original ingredient list). Small batc
 2. Whisk wet ingredients until smooth.
 3. Whisk dry ingredients in a separate bowl, then fold into wet until just combined (don't overmix).
 4. Spread batter in pan, fan apple slices on top.
-5. Bake 25–30 min, until a toothpick comes out clean.
+5. Bake 25–30 min at 350°F, until a toothpick comes out clean.
 6. Cool 10 min in pan before removing.
