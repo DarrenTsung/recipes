@@ -39,7 +39,7 @@ category: Soups & Stews
 
 - Jasmine rice or rice noodles (I used 2 bundles of mei fun for Tiffany + I), for serving
 
-### For the shrimp stock:
+### Shrimp stock:
 
 - Shrimp shells and heads from above
 - 1 Tbsp neutral oil

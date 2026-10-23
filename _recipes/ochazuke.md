@@ -15,14 +15,14 @@ Adapted from: https://www.justonecookbook.com/ochazuke/
 - 2 sprigs mitsuba (or ⅛ scallion, cut into small pieces)
 - Wasabi (optional)
 
-### For Dashi:
+### Dashi:
 
 - 1 cup dashi
 - 1 tsp mirin
 - 1 tsp soy sauce
 - ⅛ tsp kosher salt
 
-### For Green Tea Version:
+### Green tea version:
 
 - 2 tsp Japanese green tea leaves
 - 1 cup hot water

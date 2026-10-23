@@ -19,7 +19,7 @@ Serves 2.
 - 5 cilantro roots/stems
 - 6 fish balls or 4 oz sliced fish cake (optional)
 
-### Per Bowl:
+### Per bowl:
 
 - 1 Tbsp nam prik pao (to taste — same Maepranom one as [tom yum goong](/tom_yum_goong))
 - 1 Tbsp fish sauce

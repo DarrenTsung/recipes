@@ -27,7 +27,7 @@ Super lazy version — boil meat, rinse, then combine everything in a pot. Neck 
 - 8 cups water
 - 1 [lu bao](https://thewoksoflife.com/chinese-spice-braising-packets/) packet
 
-### For Serving:
+### Serving:
 
 - ~220g fresh wheat noodles
 - Bok choy

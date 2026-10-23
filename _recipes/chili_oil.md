@@ -13,7 +13,7 @@ Makes a small batch (enough to fill 1 mason jar)
 
 ## Ingredients:
 
-### Dried
+### Dried:
 
 - 2 bay leaves
 - 3 star anise

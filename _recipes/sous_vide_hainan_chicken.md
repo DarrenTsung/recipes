@@ -13,7 +13,7 @@ category: Mains
 - a few garlic cloves
 - scallions
 
-### For rice:
+### Rice:
 
 - 2 cups jasmine rice
 - ½ chicken stock (from the bag) + water to the 2.25 mark

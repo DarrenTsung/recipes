@@ -61,7 +61,7 @@ Consistency rules (the layout depends on them):
 - **Ingredients are brief:** `1 fillet baked salmon, flaked into bite-size pieces` — not "Take one fillet of baked salmon and flake it..."
 - **Measurements:** mix of metric and imperial is fine. Include gram weights where precision matters (e.g., `50g oyster sauce`). Mention specific brands/products when relevant.
 - **Cross-link other recipes** using Jekyll-relative paths: `[baked salmon](/baked_salmon)`.
-- **Sub-sections in ingredients** use `###` headings (e.g., `### For Dashi:`).
+- **Sub-sections in ingredients** use `###` headings in sentence case without "For" (e.g., `### Dashi:`, `### Per bowl:`).
 
 ## Commit Conventions
 
