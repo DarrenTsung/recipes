@@ -1,5 +1,6 @@
 ---
 title: Apple Yogurt Cake
+category: Breakfast & Baking
 ---
 
 ## Notes

@@ -1,5 +1,6 @@
 ---
 title: Curried Lentil, Tomato, and Coconut Soup
+category: Soups & Stews
 ---
 
 ## Source

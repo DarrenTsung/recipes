@@ -1,5 +1,6 @@
 ---
 title: Shrimp Pesto Pasta
+category: Rice & Noodles
 ---
 
 ## Source

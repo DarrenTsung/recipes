@@ -1,5 +1,6 @@
 ---
 title: Kumquat Marmalade
+category: Sauces & Pantry
 ---
 
 ## Source

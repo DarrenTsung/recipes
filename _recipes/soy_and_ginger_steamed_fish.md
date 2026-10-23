@@ -1,5 +1,6 @@
 ---
 title: Soy and Ginger Steamed Fish
+category: Mains
 ---
 
 Adapted from: https://www.bonappetit.com/recipe/soy-and-ginger-steamed-fish

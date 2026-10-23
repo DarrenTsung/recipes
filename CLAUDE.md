@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a personal recipe collection site built with Jekyll and hosted on GitHub Pages. It uses the `minima` theme.
+This is a personal recipe collection site built with Jekyll and hosted on GitHub Pages, with custom layouts (see Architecture).
 
 ## Local Development
 
@@ -14,10 +14,12 @@ bundle exec jekyll serve
 
 ## Architecture
 
-- `_config.yml` — Jekyll config. Recipes are a Jekyll **collection** (`site.recipes`) with `output: true` and permalink `/:name`.
-- `_recipes/` — Each recipe is a Markdown file with YAML front matter (at minimum, `title`). Filenames use `snake_case`.
-- `index.md` — Home page that lists all recipes via `site.recipes`.
-- `index.md` also has a **Want to Try** section: plain links to untested recipes/videos, plus any recipe with `want_to_try: true` in front matter (those are hidden from the main list). Remove the flag once tried.
+- `_config.yml` — Jekyll config. Recipes are a Jekyll **collection** (`site.recipes`) with `output: true` and permalink `/:name`. `fonts_url` sets the Google Fonts stylesheet.
+- `_recipes/` — Each recipe is a Markdown file with YAML front matter (`title`, plus `category`). Filenames use `snake_case`.
+- `index.md` — Home page; just front matter. Everything is rendered by `_layouts/home.html`: a searchable recipe index grouped by category, plus a separate **Want to Try** section.
+- **Want to Try:** recipes with `want_to_try: true` in front matter are listed there instead of the main index (remove the flag once tried). Link-only entries (videos, untested web recipes) go in `_data/want_to_try.yml` as `title` / `url` / `source`.
+- **Categories:** `_data/categories.yml` sets the category list and order on the home page. Every recipe should have a `category:` matching one of them (anything else shows under "Other").
+- Site design is custom (the `minima` theme is still set but its layouts are overridden): `_layouts/default.html`, `home.html`, `page.html` (recipe pages), `_includes/recipe-item.html`, `assets/css/site.css`, `assets/js/site.js` (search, category filter, tap-to-check ingredients/steps, keep-screen-on). Recipe pages split content on `##` headings into sections; `## Ingredients` and `## Instructions` get the checklist behavior, so keep those heading names.
 - CLAUDE.md and README.md are excluded from the built site via `_config.yml`.
 
 ## Adding a Recipe
@@ -27,6 +29,7 @@ Create a new `.md` file in `_recipes/` with this structure:
 ```markdown
 ---
 title: Recipe Name
+category: Soups & Stews
 ---
 
 ## Source

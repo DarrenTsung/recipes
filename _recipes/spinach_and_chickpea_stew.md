@@ -1,5 +1,6 @@
 ---
 title: Spinach and Chickpea Stew
+category: Soups & Stews
 ---
 
 ## Source

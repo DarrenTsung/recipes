@@ -1,0 +1,9 @@
+{%- assign r = include.recipe -%}
+{%- assign src = r.content | split: "https://" -%}
+{%- if src.size > 1 %}{% assign host = src[1] | split: "/" | first | replace: "www.", "" | split: ">" | first | split: ")" | first %}{% else %}{% assign host = nil %}{% endif -%}
+<li class="recipe-item" data-search="{{ r.title | downcase | escape }} {{ r.content | strip_html | normalize_whitespace | downcase | truncatewords: 150 | escape }}">
+  <a href="{{ r.url | relative_url }}">
+    <span class="r-title">{{ r.title }}</span>
+    {%- if host %}<span class="r-meta">{{ host }}</span>{% endif %}
+  </a>
+</li>

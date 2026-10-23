@@ -1,0 +1,81 @@
+---
+layout: default
+---
+{%- assign cooked = site.recipes | where_exp: "r", "r.want_to_try != true" | sort: "title" -%}
+{%- assign untried = site.recipes | where: "want_to_try", true | sort: "title" -%}
+{%- assign links = site.data.want_to_try | default: empty -%}
+{%- assign want_count = untried.size | plus: links.size -%}
+<section class="hero">
+  <h1>{{ site.title }}</h1>
+  <p class="tagline">{{ site.description }}</p>
+  <div class="search">
+    <input type="search" id="recipe-search" placeholder="Search recipes or ingredients…" autocomplete="off" aria-label="Search recipes">
+  </div>
+  {{ content }}
+</section>
+
+<div class="home-grid">
+  <section class="recipes-section" id="recipes">
+    <div class="section-head">
+      <h2>Recipes</h2>
+      <span class="count">{{ cooked.size }}</span>
+    </div>
+    <nav class="cat-nav" aria-label="Categories">
+      <button type="button" class="chip is-active" data-cat="all">All</button>
+      {%- for cat in site.data.categories %}
+      {%- assign in_cat = cooked | where: "category", cat %}
+      {%- if in_cat.size > 0 %}
+      <button type="button" class="chip" data-cat="{{ cat | slugify }}">{{ cat }} <span>{{ in_cat.size }}</span></button>
+      {%- endif %}
+      {%- endfor %}
+    </nav>
+    {%- for cat in site.data.categories %}
+    {%- assign in_cat = cooked | where: "category", cat %}
+    {%- if in_cat.size > 0 %}
+    <div class="cat-group" data-cat="{{ cat | slugify }}">
+      <h3>{{ cat }}</h3>
+      <ul class="recipe-list">
+        {%- for recipe in in_cat %}{% include recipe-item.html recipe=recipe %}{% endfor %}
+      </ul>
+    </div>
+    {%- endif %}
+    {%- endfor %}
+    {%- assign uncategorized = "" | split: "" %}
+    {%- for r in cooked %}{% unless site.data.categories contains r.category %}{% assign uncategorized = uncategorized | push: r %}{% endunless %}{% endfor %}
+    {%- if uncategorized.size > 0 %}
+    <div class="cat-group" data-cat="other">
+      <h3>Other</h3>
+      <ul class="recipe-list">
+        {%- for recipe in uncategorized %}{% include recipe-item.html recipe=recipe %}{% endfor %}
+      </ul>
+    </div>
+    {%- endif %}
+    <p class="no-results" hidden>No recipes match.</p>
+  </section>
+
+  <aside class="want-section" id="want-to-try">
+    <div class="section-head">
+      <h2>Want to Try</h2>
+      <span class="count">{{ want_count }}</span>
+    </div>
+    <p class="section-note">Haven't made these yet.</p>
+    <ul class="want-list">
+      {%- for recipe in untried %}
+      <li class="want-item recipe-item" data-search="{{ recipe.title | downcase | escape }} {{ recipe.content | strip_html | normalize_whitespace | downcase | truncatewords: 150 | escape }}">
+        <a href="{{ recipe.url | relative_url }}">
+          <span class="r-title">{{ recipe.title }}</span>
+        </a>
+      </li>
+      {%- endfor %}
+      {%- for link in links %}
+      {%- if link.url contains "youtube.com" or link.url contains "youtu.be" %}{% assign kind = "Video" %}{% else %}{% assign kind = "Link" %}{% endif %}
+      <li class="want-item recipe-item" data-search="{{ link.title | downcase | escape }} {{ link.source | downcase | escape }}">
+        <a href="{{ link.url }}" target="_blank" rel="noopener">
+          <span class="r-title">{{ link.title }}</span>
+          <span class="tag tag-{{ kind | downcase }}">{{ link.source | default: kind }} ↗</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </aside>
+</div>

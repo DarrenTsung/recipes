@@ -1,5 +1,6 @@
 ---
 title: High-Protein Egg Bagel
+category: Breakfast & Baking
 ---
 
 ## Source

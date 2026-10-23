@@ -1,5 +1,6 @@
 ---
 title: Taiwanese Beef Noodle Soup
+category: Soups & Stews
 ---
 
 Adapted from: https://thewoksoflife.com/taiwanese-beef-noodle-soup-instant-pot/

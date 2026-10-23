@@ -1,5 +1,6 @@
 ---
 title: ABC Soup
+category: Soups & Stews
 ---
 
 ## Source

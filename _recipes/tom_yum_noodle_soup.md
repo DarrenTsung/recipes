@@ -1,5 +1,6 @@
 ---
 title: Tom Yum Noodle Soup (Kuay Teow Tom Yum)
+category: Soups & Stews
 want_to_try: true
 ---
 

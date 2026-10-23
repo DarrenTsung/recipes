@@ -1,5 +1,6 @@
 ---
 title: Fish Fragrant Sauce
+category: Sauces & Pantry
 ---
 
 ## Adapted from: Woks of Life, Eggplant with Garlic Sauce (魚香茄子)

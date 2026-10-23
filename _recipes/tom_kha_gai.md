@@ -1,5 +1,6 @@
 ---
 title: Tom Kha Gai
+category: Soups & Stews
 ---
 
 ## Source

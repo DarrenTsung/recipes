@@ -1,5 +1,6 @@
 ---
 title: Ochazuke
+category: Rice & Noodles
 ---
 
 Adapted from: https://www.justonecookbook.com/ochazuke/

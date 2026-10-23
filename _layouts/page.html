@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{%- assign body = content | replace: ':</h2>', '</h2>' | replace: ':</h3>', '</h3>' | split: '<h2' -%}
+<article class="recipe{% if page.want_to_try %} is-untried{% endif %}">
+  <nav class="crumbs">
+    <a class="back" href="{{ '/' | relative_url }}{% if page.want_to_try %}#want-to-try{% else %}#recipes{% endif %}">← Recipes</a>
+    {%- if page.category %}<span class="eyebrow">{{ page.category }}</span>{% endif %}
+  </nav>
+  <header class="recipe-header">
+    <h1>{{ page.title }}</h1>
+    {%- if page.want_to_try %}<p class="untried-banner">On the want-to-try list — haven't made this yet.</p>{% endif %}
+    {%- if page.collection == "recipes" %}
+    <div class="cook-tools">
+      <button type="button" class="tool" id="wake-toggle" hidden>Keep screen on</button>
+      <button type="button" class="tool" id="reset-progress" hidden>Reset checkmarks</button>
+    </div>
+    {%- endif %}
+  </header>
+  <div class="recipe-body">
+    {%- if body[0] != "" %}<div class="recipe-intro">{{ body[0] }}</div>{% endif %}
+    {%- for part in body offset: 1 %}
+    {%- assign bits = part | split: '"' %}
+    <section class="block block-{{ bits[1] | split: '-' | first }}">
+      {{ '<h2' | append: part }}
+    </section>
+    {%- endfor %}
+  </div>
+</article>

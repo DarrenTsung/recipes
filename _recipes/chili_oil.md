@@ -1,5 +1,6 @@
 ---
 title: Chili Oil
+category: Sauces & Pantry
 ---
 
 ## Source

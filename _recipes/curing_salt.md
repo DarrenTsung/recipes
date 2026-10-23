@@ -1,5 +1,6 @@
 ---
 title: Curing Salt
+category: Sauces & Pantry
 ---
 
 ## Ingredients:

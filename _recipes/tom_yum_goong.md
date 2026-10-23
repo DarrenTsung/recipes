@@ -1,5 +1,6 @@
 ---
 title: Tom Yum Goong
+category: Soups & Stews
 ---
 
 ## Source

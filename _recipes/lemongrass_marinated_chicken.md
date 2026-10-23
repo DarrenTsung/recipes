@@ -1,5 +1,6 @@
 ---
 title: Lemongrass Marinated Chicken
+category: Mains
 ---
 
 ## Ingredients:
