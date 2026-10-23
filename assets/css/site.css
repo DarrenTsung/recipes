@@ -197,3 +197,7 @@ body { font-size: 18px; }
 /* Center the icon on the running-head text (baseline alignment pushed it up) */
 .crumbs { align-items: center; }
 .reset-btn:focus:not(:focus-visible), .theme-btn:focus:not(:focus-visible) { outline: none; }
+/* Icons: stay the same gray as the labels (hover only on real pointers), and sit on the caps' optical center */
+.theme-btn:hover, .theme-btn:focus-visible, .reset-btn:hover, .reset-btn:focus-visible { color: var(--muted); }
+@media (hover: hover) { .theme-btn:hover, .reset-btn:hover { color: var(--accent); } }
+.theme-btn svg, .reset-btn svg { transform: translateY(-1px); }
