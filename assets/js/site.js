@@ -1,4 +1,28 @@
 (function () {
+  // Light/dark toggle: overrides the device setting and remembers the choice
+  var root = document.documentElement;
+  var themeHost = document.querySelector('.crumbs') || document.querySelector('.site-header .wrap');
+  if (themeHost) {
+    var themeBtn = document.createElement('button');
+    themeBtn.type = 'button';
+    themeBtn.className = 'theme-btn';
+    var isDark = function () {
+      return root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    };
+    var label = function () {
+      themeBtn.textContent = isDark() ? '☀' : '☾';
+      themeBtn.setAttribute('aria-label', isDark() ? 'Switch to light mode' : 'Switch to dark mode');
+      themeBtn.title = themeBtn.getAttribute('aria-label');
+    };
+    label();
+    themeBtn.addEventListener('click', function () {
+      root.dataset.theme = isDark() ? 'light' : 'dark';
+      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+      label();
+    });
+    themeHost.appendChild(themeBtn);
+  }
+
   // Home: search + category filter
   var search = document.getElementById('recipe-search');
   var chips = document.querySelectorAll('.chip[data-cat]');

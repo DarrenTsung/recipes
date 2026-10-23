@@ -53,9 +53,11 @@ pre, code { font-size: .9em; }
   --body-font: "Newsreader", Georgia, serif; --head-font: "Playfair Display", Georgia, serif; --sans: "Inter", system-ui, sans-serif;
   --wrap: 1160px; --box-radius: 0;
 }
+/* Dark palette: follows the device unless the header toggle set data-theme */
 @media (prefers-color-scheme: dark) {
-  :root { --bg: #151413; --ink: #ece8e1; --muted: #8f897f; --link: #ece8e1; --accent: #6fb6d4; --line: #2e2b28; --line-strong: #ece8e1; --field: #1d1c1a; --want-bg: #1c2326; --want-ink: #ece8e1; }
+  :root:not([data-theme="light"]) { --bg: #151413; --ink: #ece8e1; --muted: #8f897f; --link: #ece8e1; --accent: #6fb6d4; --line: #2e2b28; --line-strong: #ece8e1; --field: #1d1c1a; --want-bg: #1c2326; --want-ink: #ece8e1; color-scheme: dark; }
 }
+:root[data-theme="dark"] { --bg: #151413; --ink: #ece8e1; --muted: #8f897f; --link: #ece8e1; --accent: #6fb6d4; --line: #2e2b28; --line-strong: #ece8e1; --field: #1d1c1a; --want-bg: #1c2326; --want-ink: #ece8e1; color-scheme: dark; }
 body { font-size: 18px; }
 .site-header { padding: 22px 0; border-bottom: 1px solid var(--ink); }
 .site-title { font-family: var(--head-font); font-style: italic; font-size: 22px; }
@@ -183,3 +185,8 @@ body { font-size: 18px; }
 /* --- Want to Try: tinted card; bleeds into the gutter so rows keep full width --- */
 .want-group { background: var(--want-bg); margin: 28px -16px 0; padding: 14px 16px 10px; }
 .want-group h3 { margin-bottom: 4px; }
+/* --- Light/dark toggle in the header / running head --- */
+.theme-btn { font: inherit; font-size: 14px; line-height: 1; color: var(--muted); background: none; border: 0; padding: 2px 4px; cursor: pointer; }
+.theme-btn:hover, .theme-btn:focus-visible { color: var(--ink); }
+.crumbs .eyebrow { margin-left: auto; }
+.crumbs .theme-btn { margin-left: 4px; }
