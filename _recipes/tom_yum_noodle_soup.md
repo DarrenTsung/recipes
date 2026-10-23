@@ -6,9 +6,11 @@ want_to_try: true
 
 Adapted from: <https://thewoksoflife.com/tom-yum-noodle-soup-kuay-teow-tom-yum/> (simplified with nam prik pao in place of chili flakes, chili vinegar, and garlic oil)
 
-## Ingredients:
+## Notes
 
 Serves 2.
+
+## Ingredients:
 
 ### Broth:
 

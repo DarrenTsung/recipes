@@ -7,7 +7,9 @@ category: Vegetables
 
 Woks of Life cookbook, p. 231 (魚香茄子, yú xiāng qiézi)
 
-## Serves 2 to 4
+## Notes
+
+Serves 2–4.
 
 ## Ingredients:
 

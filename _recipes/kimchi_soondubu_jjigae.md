@@ -7,9 +7,11 @@ category: Soups & Stews
 
 <https://www.koreanbapsang.com/kimchi-soondubu-jjigae-soft-tofu-stew-kimchi/>
 
-## Ingredients:
+## Notes
 
-(serves 2)
+Serves 2.
+
+## Ingredients:
 
 - 1 package (12 oz) sundubu (extra soft / silken tofu)
 - ⅓ cup thinly sliced kimchi (fully fermented)
