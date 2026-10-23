@@ -43,23 +43,36 @@ layout: default
     {%- endif -%}
   {%- endif -%}
 {%- endfor -%}
-{%- comment -%} Notes always render just above Ingredients, wherever they sit in the file. {%- endcomment -%}
-{%- if sections contains "@@NOTES@@" -%}
-  {%- assign sections = sections | replace: "@@NOTES@@", notes -%}
-{%- else -%}
-  {%- assign sections = sections | append: notes -%}
-{%- endif -%}
 {%- if src contains "http" -%}
   {%- assign url = src | split: "http" | slice: 1 | first | split: '"' | first | split: "<" | first | split: " " | first | prepend: "http" -%}
   {%- assign last = url | slice: -1 -%}
   {%- if last == "." -%}{%- assign url_len = url.size | minus: 1 -%}{%- assign url = url | slice: 0, url_len -%}{%- endif -%}
   {%- comment -%} Any note after the link (e.g. "(simplified with ...)") moves into the intro. {%- endcomment -%}
   {%- assign note = src | append: "@@END@@" | split: url | last | remove: "@@END@@" | strip_html | strip | remove_first: "." | strip -%}
-  {%- if note != "" -%}{%- assign intro = note | prepend: "<p>" | append: "</p>" | append: intro -%}{%- endif -%}
+  {%- if note != "" -%}
+    {%- comment -%} A remark after the source link (e.g. "(simplified with ...)") becomes the first note. {%- endcomment -%}
+    {%- assign first = note | slice: 0 -%}
+    {%- assign last = note | slice: -1 -%}
+    {%- if first == "(" and last == ")" -%}{%- assign note_len = note.size | minus: 2 -%}{%- assign note = note | slice: 1, note_len -%}{%- endif -%}
+    {%- assign rest_len = note.size -%}
+    {%- capture note_p %}<p>{{ note | slice: 0 | upcase }}{{ note | slice: 1, rest_len }}</p>{% endcapture -%}
+    {%- if notes == "" -%}
+      {%- assign notes = note_p | prepend: '<section class="block block-notes"><h2 id="notes">Notes</h2>' | append: '</section>' -%}
+    {%- else -%}
+      {%- assign h2_note = note_p | prepend: "</h2>" -%}
+      {%- assign notes = notes | replace_first: "</h2>", h2_note -%}
+    {%- endif -%}
+  {%- endif -%}
   {%- capture src %}<a href="{{ url }}">Source</a>{% endcapture -%}
 {%- else -%}
   {%- assign last = src | slice: -1 -%}
   {%- if last == "." -%}{%- assign src_len = src.size | minus: 1 -%}{%- assign src = src | slice: 0, src_len -%}{%- endif -%}
+{%- endif -%}
+{%- comment -%} Notes always render just above Ingredients, wherever they sit in the file. {%- endcomment -%}
+{%- if sections contains "@@NOTES@@" -%}
+  {%- assign sections = sections | replace: "@@NOTES@@", notes -%}
+{%- else -%}
+  {%- assign sections = sections | append: notes -%}
 {%- endif -%}
 <article class="recipe{% if page.want_to_try %} is-untried{% endif %}">
   <nav class="crumbs">
