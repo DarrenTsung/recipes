@@ -60,11 +60,6 @@ layout: default
     <p class="recipe-source">{{ src }}</p>
     {%- endif %}
     {%- if page.want_to_try %}<p class="untried-banner">On the want-to-try list — haven't made this yet.</p>{% endif %}
-    {%- if page.collection == "recipes" %}
-    <div class="cook-tools">
-      <button type="button" class="tool" id="wake-toggle" hidden>Keep screen on</button>
-    </div>
-    {%- endif %}
   </header>
   <div class="recipe-body">
     {%- if intro != "" %}<div class="recipe-intro">{{ intro }}</div>{% endif %}

@@ -4,7 +4,8 @@
     return '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + body + '</svg>';
   };
   var ICONS = {
-    reset: svg('<path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 3v6h6"/>'),
+    // Clockwise open-circle arrow, drawn to match the look of the ↻ character
+    reset: svg('<path d="M19.52 9.26A8 8 0 1 1 12 4"/><path d="M11 0.6L15.6 4L11 7.4z" fill="currentColor" stroke="none"/>'),
     moon: svg('<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/>'),
     sun: svg('<circle cx="12" cy="12" r="4"/><path d="M12 3v1.5M12 19.5V21M5.6 5.6l1.1 1.1M17.3 17.3l1.1 1.1M3 12h1.5M19.5 12H21M5.6 18.4l1.1-1.1M17.3 6.7l1.1-1.1"/>')
   };
@@ -102,17 +103,19 @@
     });
   }
 
-  var wakeBtn = document.getElementById('wake-toggle');
-  if (wakeBtn && 'wakeLock' in navigator) {
+  // Keep the screen awake while a recipe is open (re-acquired when the tab comes back)
+  if ('wakeLock' in navigator) {
     var lock = null;
-    wakeBtn.hidden = false;
-    function setLabel() { wakeBtn.textContent = lock ? 'Screen staying on ✓' : 'Keep screen on'; wakeBtn.classList.toggle('is-on', !!lock); }
-    wakeBtn.addEventListener('click', function () {
-      if (lock) { lock.release(); lock = null; setLabel(); return; }
+    var acquire = function () {
+      if (lock || document.visibilityState !== 'visible') return;
       navigator.wakeLock.request('screen').then(function (l) {
-        lock = l; setLabel();
-        l.addEventListener('release', function () { if (lock === l) { lock = null; setLabel(); } });
+        lock = l;
+        l.addEventListener('release', function () { lock = null; });
       }).catch(function () {});
-    });
+    };
+    acquire();
+    document.addEventListener('visibilitychange', acquire);
+    // Some browsers only grant the lock after a tap
+    document.addEventListener('click', acquire, { once: true });
   }
 })();

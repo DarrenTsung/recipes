@@ -193,7 +193,7 @@ body { font-size: 18px; }
 /* --- Icon buttons (reset, theme): SVG, centered in a fixed tap target --- */
 .reset-btn, .theme-btn { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; padding: 0; margin: -6px 0; }
 .reset-btn svg, .theme-btn svg { display: block; }
-.reset-btn svg { width: 14px; height: 14px; }
+.reset-btn svg { width: 16px; height: 16px; }
 /* Center the icon on the running-head text (baseline alignment pushed it up) */
 .crumbs { align-items: center; }
 .reset-btn:focus:not(:focus-visible), .theme-btn:focus:not(:focus-visible) { outline: none; }
