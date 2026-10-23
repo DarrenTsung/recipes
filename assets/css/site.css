@@ -201,3 +201,10 @@ body { font-size: 18px; }
 .theme-btn:hover, .theme-btn:focus-visible, .reset-btn:hover, .reset-btn:focus-visible { color: var(--muted); }
 @media (hover: hover) { .theme-btn:hover, .reset-btn:hover { color: var(--accent); } }
 .theme-btn svg, .reset-btn svg { transform: translateY(-1px); }
+/* Reset icon sits close to its heading (h2 letter-spacing already adds trailing space) */
+.block-ingredients h2 { gap: 0; }
+.reset-btn { margin-left: -2px; }
+/* Notes above Ingredients: a quiet block with clear separation */
+.block-notes { padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.block-notes ul { padding-left: 18px; margin: 0; }
+.block-notes li + li { margin-top: 4px; }

@@ -20,6 +20,7 @@ layout: default
   {%- endif -%}
 {%- endfor -%}
 {%- assign sections = "" -%}
+{%- assign notes = "" -%}
 {%- for part in body offset: 1 -%}
   {%- assign bits = part | split: '"' -%}
   {%- assign id = bits[1] -%}
@@ -34,9 +35,20 @@ layout: default
     {%- if rest != "" -%}{%- assign sections = sections | append: '<section class="block block-about">' | append: rest | append: '</section>' -%}{%- endif -%}
   {%- else -%}
     {%- capture sec %}<section class="block block-{{ id | split: '-' | first }}">{{ '<h2' | append: part }}</section>{% endcapture -%}
-    {%- assign sections = sections | append: sec -%}
+    {%- if id == "notes" -%}
+      {%- assign notes = notes | append: sec -%}
+    {%- else -%}
+      {%- if id == "ingredients" -%}{%- assign sections = sections | append: "@@NOTES@@" -%}{%- endif -%}
+      {%- assign sections = sections | append: sec -%}
+    {%- endif -%}
   {%- endif -%}
 {%- endfor -%}
+{%- comment -%} Notes always render just above Ingredients, wherever they sit in the file. {%- endcomment -%}
+{%- if sections contains "@@NOTES@@" -%}
+  {%- assign sections = sections | replace: "@@NOTES@@", notes -%}
+{%- else -%}
+  {%- assign sections = sections | append: notes -%}
+{%- endif -%}
 {%- if src contains "http" -%}
   {%- assign url = src | split: "http" | slice: 1 | first | split: '"' | first | split: "<" | first | split: " " | first | prepend: "http" -%}
   {%- assign last = url | slice: -1 -%}
