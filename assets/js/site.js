@@ -41,7 +41,6 @@
   try { state = JSON.parse(localStorage.getItem(key)) || {}; } catch (e) {}
   function save() { try { localStorage.setItem(key, JSON.stringify(state)); } catch (e) {} }
   var items = recipe.querySelectorAll('.block-ingredients li, .block-instructions > ol > li');
-  var reset = document.getElementById('reset-progress');
   items.forEach(function (li, i) {
     li.classList.add('tickable');
     if (state[i]) li.classList.add('is-done');
@@ -53,8 +52,16 @@
       save();
     });
   });
-  if (reset && items.length) {
-    reset.hidden = false;
+  // Reset icon next to the Ingredients heading clears this recipe's checkmarks
+  var ingHeading = recipe.querySelector('.block-ingredients h2');
+  if (ingHeading && items.length) {
+    var reset = document.createElement('button');
+    reset.type = 'button';
+    reset.className = 'reset-btn';
+    reset.title = 'Reset checkmarks';
+    reset.setAttribute('aria-label', 'Reset checkmarks');
+    reset.textContent = '↻';
+    ingHeading.appendChild(reset);
     reset.addEventListener('click', function () {
       state = {}; save();
       items.forEach(function (li) { li.classList.remove('is-done'); });
