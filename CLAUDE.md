@@ -17,6 +17,7 @@ bundle exec jekyll serve
 - `_config.yml` — Jekyll config. Recipes are a Jekyll **collection** (`site.recipes`) with `output: true` and permalink `/:name`.
 - `_recipes/` — Each recipe is a Markdown file with YAML front matter (at minimum, `title`). Filenames use `snake_case`.
 - `index.md` — Home page that lists all recipes via `site.recipes`.
+- `index.md` also has a **Want to Try** section: plain links to untested recipes/videos, plus any recipe with `want_to_try: true` in front matter (those are hidden from the main list). Remove the flag once tried.
 - CLAUDE.md and README.md are excluded from the built site via `_config.yml`.
 
 ## Adding a Recipe
