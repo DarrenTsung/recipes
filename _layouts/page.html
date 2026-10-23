@@ -64,9 +64,12 @@ layout: default
     {%- endif -%}
   {%- endif -%}
   {%- capture src %}<a href="{{ url }}">Source</a>{% endcapture -%}
-{%- else -%}
+{%- elsif src != "" -%}
+  {%- comment -%} No link (e.g. a cookbook): "Source" shows the details in a tooltip. {%- endcomment -%}
   {%- assign last = src | slice: -1 -%}
   {%- if last == "." -%}{%- assign src_len = src.size | minus: 1 -%}{%- assign src = src | slice: 0, src_len -%}{%- endif -%}
+  {%- assign tip = src | remove_first: "From " | strip_html -%}
+  {%- capture src %}<button type="button" class="source-tip" aria-expanded="false">Source<span class="tip" role="tooltip">{{ tip }}</span></button>{% endcapture -%}
 {%- endif -%}
 {%- comment -%} Notes always render just above Ingredients, wherever they sit in the file. {%- endcomment -%}
 {%- if sections contains "@@NOTES@@" -%}
@@ -81,8 +84,12 @@ layout: default
   </nav>
   <header class="recipe-header">
     <h1>{{ page.title }}</h1>
-    {%- if src != "" %}
-    <p class="recipe-source">{{ src }}</p>
+    {%- if src != "" or page.native_name %}
+    <p class="recipe-source">
+      {%- if page.native_name %}<span class="native-name">{{ page.native_name }}</span>{% endif %}
+      {%- if page.native_name and src != "" %}<span class="sep" aria-hidden="true"> · </span>{% endif %}
+      {{- src -}}
+    </p>
     {%- endif %}
     {%- if page.want_to_try %}<p class="untried-banner">On the want-to-try list — haven't made this yet.</p>{% endif %}
   </header>

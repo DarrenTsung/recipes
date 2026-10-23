@@ -67,6 +67,15 @@
     if (search && e.key === '/' && document.activeElement !== search) { e.preventDefault(); search.focus(); }
   });
 
+  // "Source" tooltip (sources without a link): tap to toggle, tap elsewhere to close
+  document.querySelectorAll('.source-tip').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      btn.setAttribute('aria-expanded', btn.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+    });
+    document.addEventListener('click', function () { btn.setAttribute('aria-expanded', 'false'); });
+  });
+
   // Recipe page: tap ingredients to check off, tap a step to mark where you are
   var recipe = document.querySelector('.recipe');
   if (!recipe) return;

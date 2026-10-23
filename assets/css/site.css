@@ -208,3 +208,12 @@ body { font-size: 18px; }
 .block-notes { padding-bottom: 20px; border-bottom: 1px solid var(--line); }
 .block-notes ul { padding-left: 18px; margin: 0; }
 .block-notes li + li { margin-top: 4px; }
+/* Ingredient group labels written as plain lines, e.g. "(Optional)" */
+.block-ingredients > p { margin: 14px 0 2px; font-style: italic; font-size: .9em; color: var(--muted); }
+/* Native name and "Source" share the subtitle line */
+.recipe-source .sep { font-style: normal; }
+.source-tip { position: relative; font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: help; text-decoration: underline dotted; text-underline-offset: 3px; }
+.source-tip .tip { position: absolute; left: 0; top: calc(100% + 6px); z-index: 4; width: max-content; max-width: min(280px, 80vw); padding: 6px 10px; font-size: 13px; font-style: normal; line-height: 1.4; text-align: left; color: var(--bg); background: var(--ink); visibility: hidden; opacity: 0; transition: opacity .12s; }
+.source-tip:hover .tip, .source-tip:focus-visible .tip, .source-tip[aria-expanded="true"] .tip { visibility: visible; opacity: 1; }
+/* Blank lines between list items wrap them in <p>; keep row spacing identical either way */
+.recipe-body li > p { margin: 0; }
