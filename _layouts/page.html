@@ -2,6 +2,55 @@
 layout: default
 ---
 {%- assign body = content | replace: ':</h2>', '</h2>' | replace: ':</h3>', '</h3>' | split: '<h2' -%}
+{%- comment -%}
+  Pull the recipe's source into a subtitle under the title. It comes from (in order):
+  an "Adapted from" paragraph before the first heading, a "## Source" section, or an
+  "## Adapted from ..." heading. Leftover text from those spots stays in the body.
+{%- endcomment -%}
+{%- assign src = "" -%}
+{%- assign intro = "" -%}
+{%- assign paras = body[0] | split: "</p>" -%}
+{%- for para in paras -%}
+  {%- assign p = para | strip -%}
+  {%- if p == "" -%}{%- continue -%}{%- endif -%}
+  {%- if src == "" and p contains "Adapted from" -%}
+    {%- assign src = p | remove_first: "<p>" | replace_first: "Adapted from:", "Adapted from" | strip -%}
+  {%- else -%}
+    {%- assign intro = intro | append: p | append: "</p>" -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign sections = "" -%}
+{%- for part in body offset: 1 -%}
+  {%- assign bits = part | split: '"' -%}
+  {%- assign id = bits[1] -%}
+  {%- assign rest = part | split: "</h2>" | last | strip -%}
+  {%- if src == "" and id == "source" -%}
+    {%- assign rparas = rest | split: "</p>" -%}
+    {%- assign src = rparas[0] | remove_first: "<p>" | strip | prepend: "From " -%}
+    {%- assign rest = rest | remove_first: rparas[0] | remove_first: "</p>" | strip -%}
+    {%- if rest != "" -%}{%- assign sections = sections | append: '<section class="block block-about">' | append: rest | append: '</section>' -%}{%- endif -%}
+  {%- elsif src == "" and id contains "adapted-from" -%}
+    {%- assign src = part | split: ">" | slice: 1 | first | split: "</h2" | first | replace_first: "Adapted from:", "Adapted from" | strip -%}
+    {%- if rest != "" -%}{%- assign sections = sections | append: '<section class="block block-about">' | append: rest | append: '</section>' -%}{%- endif -%}
+  {%- else -%}
+    {%- capture sec %}<section class="block block-{{ id | split: '-' | first }}">{{ '<h2' | append: part }}</section>{% endcapture -%}
+    {%- assign sections = sections | append: sec -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if src contains "http" -%}
+  {%- assign url = src | split: "http" | slice: 1 | first | split: '"' | first | split: "<" | first | split: " " | first | prepend: "http" -%}
+  {%- assign last = url | slice: -1 -%}
+  {%- if last == "." -%}{%- assign url_len = url.size | minus: 1 -%}{%- assign url = url | slice: 0, url_len -%}{%- endif -%}
+  {%- assign host = url | split: "/" | slice: 2 | first | remove_first: "www." -%}
+  {%- if src contains "href" -%}
+    {%- assign src = src | replace: url, "@@URL@@" | replace: '>@@URL@@<', '>@@HOST@@<' | replace: "@@URL@@", url | replace: "@@HOST@@", host -%}
+  {%- else -%}
+    {%- capture link %}<a href="{{ url }}">{{ host }}</a>{% endcapture -%}
+    {%- assign src = src | replace_first: url, link -%}
+  {%- endif -%}
+{%- endif -%}
+{%- assign last = src | slice: -1 -%}
+{%- if last == "." -%}{%- assign src_len = src.size | minus: 1 -%}{%- assign src = src | slice: 0, src_len -%}{%- endif -%}
 <article class="recipe{% if page.want_to_try %} is-untried{% endif %}">
   <nav class="crumbs">
     <a class="back" href="{{ '/' | relative_url }}{% if page.want_to_try %}#want-to-try{% else %}#recipes{% endif %}">← Recipes</a>
@@ -9,6 +58,9 @@ layout: default
   </nav>
   <header class="recipe-header">
     <h1>{{ page.title }}</h1>
+    {%- if src != "" %}
+    <p class="recipe-source">{{ src }}</p>
+    {%- endif %}
     {%- if page.want_to_try %}<p class="untried-banner">On the want-to-try list — haven't made this yet.</p>{% endif %}
     {%- if page.collection == "recipes" %}
     <div class="cook-tools">
@@ -18,12 +70,7 @@ layout: default
     {%- endif %}
   </header>
   <div class="recipe-body">
-    {%- if body[0] != "" %}<div class="recipe-intro">{{ body[0] }}</div>{% endif %}
-    {%- for part in body offset: 1 %}
-    {%- assign bits = part | split: '"' %}
-    <section class="block block-{{ bits[1] | split: '-' | first }}">
-      {{ '<h2' | append: part }}
-    </section>
-    {%- endfor %}
+    {%- if intro != "" %}<div class="recipe-intro">{{ intro }}</div>{% endif %}
+    {{ sections }}
   </div>
 </article>
