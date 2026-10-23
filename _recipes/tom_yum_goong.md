@@ -17,7 +17,9 @@ category: Soups & Stews
 - 8 slices galangal
 - 2 Thai chilies, sliced
 - 7 oz oyster mushrooms, torn into bite-sized pieces (or shimeji, enoki, fresh shiitake, straw)
+
 (Optional)
+
 - Napa Cabbage
 - Tofu
 
@@ -25,7 +27,9 @@ category: Soups & Stews
 - 3 Tbsp fish sauce
 - ½ cup fresh lime juice
 - 1 tsp sugar
+
 (Optional)
+
 - Fish cake
 - Bok choy
 - Thinly sliced yellow squash / zucchini

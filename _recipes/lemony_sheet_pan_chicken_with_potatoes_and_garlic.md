@@ -24,7 +24,7 @@ Adapted from: https://www.youtube.com/watch?v=3b4cyBEvUPE.
 - Black pepper, to taste
 - Aleppo (or other) pepper flakes, to taste
 
-## Special Notes to Self:
+## Notes:
 
 - Don't bake the lemon. It released liquid and prevented browning.
 - Oil the foil before baking to prevent sticking.

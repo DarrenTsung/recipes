@@ -8,7 +8,9 @@ category: Sauces & Pantry
 - 4 parts salt (80g)
 - 1 part sugar (20g)
 
-Combine in a jar and stir to mix.
+## Instructions:
+
+1. Combine in a jar and stir to mix.
 
 ## Usage:
 

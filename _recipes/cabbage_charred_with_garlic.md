@@ -1,9 +1,8 @@
 ---
 title: Cabbage Charred with Garlic
 category: Vegetables
+native_name: Bắp Cải Xào Tỏi
 ---
-
-Bắp Cải Xào Tỏi
 
 ## Ingredients:
 

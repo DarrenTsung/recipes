@@ -11,7 +11,8 @@ category: Soups & Stews
 
 - Pork ribs or Chicken w/Bone
 
-Some combo of veggies:
+### Veggies (some combo):
+
 - ★ Gold potatoes
 - ★ Carrots
 - ★ Tomatoes

@@ -11,8 +11,9 @@ category: Soups & Stews
 
 - 3 cups unsalted chicken stock (or water + chicken boulion + hondashi)
 - 2 lb boneless skinless chicken thigh, cut into 1-inch pieces
-(Optional)
-(Veggies that cook for longer)
+
+(Optional — veggies that cook for longer)
+
 - Carrot
 - Napa Cabbage
 
@@ -27,6 +28,7 @@ category: Soups & Stews
 - 2 tsp brown sugar
 
 (Veggies that can cook in 5 minutes)
+
 - Mushrooms
 - Onion
 - Yellow squash

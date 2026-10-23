@@ -3,7 +3,9 @@ title: Fish Fragrant Sauce
 category: Sauces & Pantry
 ---
 
-## Adapted from: Woks of Life, Eggplant with Garlic Sauce (魚香茄子)
+Adapted from: Woks of Life cookbook, Eggplant with Garlic Sauce
+
+## Notes
 
 Storable seasoning mix for [eggplant with garlic sauce](/eggplant_with_garlic_sauce). Makes 4 servings (~360g) — use ¼ (~90g) per batch, store the rest in the fridge. Hot water, cornstarch, and aromatics get added fresh when cooking (see the recipe).
 

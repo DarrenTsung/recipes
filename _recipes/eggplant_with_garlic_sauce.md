@@ -1,11 +1,12 @@
 ---
 title: Eggplant with Garlic Sauce
 category: Vegetables
+native_name: 魚香茄子 (yú xiāng qiézi)
 ---
 
 ## Source
 
-Woks of Life cookbook, p. 231 (魚香茄子, yú xiāng qiézi)
+Woks of Life cookbook, p. 231
 
 ## Notes
 

@@ -7,9 +7,12 @@ category: Breakfast & Baking
 
 <https://www.skinnytaste.com/high-protein-egg-bagel/>
 
-## Ingredients:
+## Notes
 
-(makes 4)
+- Makes 4.
+- Keeps 1 day room temp, 3 days fridge, 3 months frozen sliced.
+
+## Ingredients:
 
 - 177g (1¼ cups) all-purpose flour (or whole wheat / gluten-free 1-to-1)
 - 2 tsp baking powder (fresh)
@@ -27,5 +30,3 @@ category: Breakfast & Baking
 5. Divide into 4. Roll each into a ~¾" rope and join ends.
 6. Brush with egg white, add toppings.
 7. Bake on top rack 25 min (or air fryer 280°F, 15-16 min). Cool 15 min before slicing.
-
-(keeps 1 day room temp, 3 days fridge, 3 months frozen sliced)
