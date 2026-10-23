@@ -41,16 +41,14 @@ layout: default
   {%- assign url = src | split: "http" | slice: 1 | first | split: '"' | first | split: "<" | first | split: " " | first | prepend: "http" -%}
   {%- assign last = url | slice: -1 -%}
   {%- if last == "." -%}{%- assign url_len = url.size | minus: 1 -%}{%- assign url = url | slice: 0, url_len -%}{%- endif -%}
-  {%- assign host = url | split: "/" | slice: 2 | first | remove_first: "www." -%}
-  {%- if src contains "href" -%}
-    {%- assign src = src | replace: url, "@@URL@@" | replace: '>@@URL@@<', '>@@HOST@@<' | replace: "@@URL@@", url | replace: "@@HOST@@", host -%}
-  {%- else -%}
-    {%- capture link %}<a href="{{ url }}">{{ host }}</a>{% endcapture -%}
-    {%- assign src = src | replace_first: url, link -%}
-  {%- endif -%}
+  {%- comment -%} Any note after the link (e.g. "(simplified with ...)") moves into the intro. {%- endcomment -%}
+  {%- assign note = src | append: "@@END@@" | split: url | last | remove: "@@END@@" | strip_html | strip | remove_first: "." | strip -%}
+  {%- if note != "" -%}{%- assign intro = note | prepend: "<p>" | append: "</p>" | append: intro -%}{%- endif -%}
+  {%- capture src %}<a href="{{ url }}">Source</a>{% endcapture -%}
+{%- else -%}
+  {%- assign last = src | slice: -1 -%}
+  {%- if last == "." -%}{%- assign src_len = src.size | minus: 1 -%}{%- assign src = src | slice: 0, src_len -%}{%- endif -%}
 {%- endif -%}
-{%- assign last = src | slice: -1 -%}
-{%- if last == "." -%}{%- assign src_len = src.size | minus: 1 -%}{%- assign src = src | slice: 0, src_len -%}{%- endif -%}
 <article class="recipe{% if page.want_to_try %} is-untried{% endif %}">
   <nav class="crumbs">
     <a class="back" href="{{ '/' | relative_url }}{% if page.want_to_try %}#want-to-try{% else %}#recipes{% endif %}">← Recipes</a>
