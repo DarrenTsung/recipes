@@ -190,3 +190,7 @@ body { font-size: 18px; }
 .theme-btn:hover, .theme-btn:focus-visible { color: var(--ink); }
 .crumbs .eyebrow { margin-left: auto; }
 .crumbs .theme-btn { margin-left: 4px; }
+/* --- Icon buttons (reset, theme): SVG, centered in a fixed tap target --- */
+.reset-btn, .theme-btn { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; padding: 0; margin: -6px 0; }
+.reset-btn svg, .theme-btn svg { display: block; }
+.reset-btn svg { width: 14px; height: 14px; }
