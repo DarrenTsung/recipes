@@ -56,7 +56,6 @@ layout: default
     {%- if want_count > 0 %}
     <div class="cat-group want-group" data-cat="want-to-try" id="want-to-try">
       <h3>Want to Try</h3>
-      <p class="section-note">Haven't made these yet.</p>
       <ul class="recipe-list want-list">
         {%- for recipe in untried %}
         <li class="want-item recipe-item" data-search="{{ recipe.title | downcase | escape }} {{ recipe.content | strip_html | normalize_whitespace | downcase | truncatewords: 150 | escape }}">
