@@ -3,8 +3,6 @@ title: Sous Vide Hainan Chicken
 category: Mains
 ---
 
-(Settled on this after iterating from May–Dec 2023. Dec 20, 2023: tried again, don't think it needs any tweaks.)
-
 ## Ingredients:
 
 - 12g salt (measure separately — don't eyeball)
@@ -29,6 +27,7 @@ category: Mains
 
 ## Notes:
 
+- Settled on this after iterating from May–Dec 2023. Dec 20, 2023: tried again, don't think it needs any tweaks.
 - Need a better filter for straining the stock.
 
 ## Log:

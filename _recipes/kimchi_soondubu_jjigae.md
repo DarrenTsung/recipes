@@ -1,5 +1,5 @@
 ---
-title: Kimchi Soondubu Jjigae (Soft Tofu Stew)
+title: Kimchi Soft Tofu Stew
 category: Soups & Stews
 ---
 
