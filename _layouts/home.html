@@ -28,6 +28,9 @@ layout: default
       <button type="button" class="chip" data-cat="{{ cat | slugify }}">{{ cat }} <span>{{ in_cat.size }}</span></button>
       {%- endif %}
       {%- endfor %}
+      {%- if want_count > 0 %}
+      <button type="button" class="chip chip-want" data-cat="want-to-try">Want to Try <span>{{ want_count }}</span></button>
+      {%- endif %}
     </nav>
     {%- for cat in site.data.categories %}
     {%- assign in_cat = cooked | where: "category", cat %}
@@ -50,32 +53,31 @@ layout: default
       </ul>
     </div>
     {%- endif %}
+    {%- if want_count > 0 %}
+    <div class="cat-group want-group" data-cat="want-to-try" id="want-to-try">
+      <h3>Want to Try</h3>
+      <p class="section-note">Haven't made these yet.</p>
+      <ul class="recipe-list want-list">
+        {%- for recipe in untried %}
+        <li class="want-item recipe-item" data-search="{{ recipe.title | downcase | escape }} {{ recipe.content | strip_html | normalize_whitespace | downcase | truncatewords: 150 | escape }}">
+          <a href="{{ recipe.url | relative_url }}">
+            <span class="r-title">{{ recipe.title }}</span>
+          </a>
+        </li>
+        {%- endfor %}
+        {%- for link in links %}
+        {%- if link.url contains "youtube.com" or link.url contains "youtu.be" %}{% assign kind = "Video" %}{% else %}{% assign kind = "Link" %}{% endif %}
+        <li class="want-item recipe-item" data-search="{{ link.title | downcase | escape }} {{ link.source | downcase | escape }}">
+          <a href="{{ link.url }}" target="_blank" rel="noopener">
+            <span class="r-title">{{ link.title }}</span>
+            <span class="tag tag-{{ kind | downcase }}">{{ link.source | default: kind }} ↗</span>
+          </a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endif %}
     <p class="no-results" hidden>No recipes match.</p>
   </section>
 
-  <aside class="want-section" id="want-to-try">
-    <div class="section-head">
-      <h2>Want to Try</h2>
-      <span class="count">{{ want_count }}</span>
-    </div>
-    <p class="section-note">Haven't made these yet.</p>
-    <ul class="want-list">
-      {%- for recipe in untried %}
-      <li class="want-item recipe-item" data-search="{{ recipe.title | downcase | escape }} {{ recipe.content | strip_html | normalize_whitespace | downcase | truncatewords: 150 | escape }}">
-        <a href="{{ recipe.url | relative_url }}">
-          <span class="r-title">{{ recipe.title }}</span>
-        </a>
-      </li>
-      {%- endfor %}
-      {%- for link in links %}
-      {%- if link.url contains "youtube.com" or link.url contains "youtu.be" %}{% assign kind = "Video" %}{% else %}{% assign kind = "Link" %}{% endif %}
-      <li class="want-item recipe-item" data-search="{{ link.title | downcase | escape }} {{ link.source | downcase | escape }}">
-        <a href="{{ link.url }}" target="_blank" rel="noopener">
-          <span class="r-title">{{ link.title }}</span>
-          <span class="tag tag-{{ kind | downcase }}">{{ link.source | default: kind }} ↗</span>
-        </a>
-      </li>
-      {%- endfor %}
-    </ul>
-  </aside>
 </div>

@@ -162,3 +162,12 @@ body { font-size: 18px; }
 .want-item a::after { content: ""; order: 2; flex: 1 1 24px; min-width: 16px; border-bottom: 1px dotted var(--muted); transform: translateY(-4px); }
 .want-item .tag { order: 3; flex: 0 0 auto; margin: 0; font-size: 11px; text-transform: lowercase; letter-spacing: .02em; }
 .want-item:hover .r-title { color: var(--accent); }
+/* --- Want to Try lives in the index as its own category --- */
+@media (min-width: 900px) { .home-grid { grid-template-columns: 1fr; } }
+.want-group .section-note { margin: -4px 0 4px; }
+.want-group .recipe-item a { display: flex; }
+/* --- Home: minimal running head to match recipe pages --- */
+.site-header { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.site-title { font-family: var(--sans); font-style: normal; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .14em; }
+.recipes-section > .section-head { display: none; }
+.cat-nav { margin-top: 16px; }

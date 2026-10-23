@@ -17,10 +17,6 @@
       });
       g.hidden = shown === 0;
     });
-    document.querySelectorAll('.want-item').forEach(function (li) {
-      var hay = li.dataset.search || '';
-      li.hidden = !terms.every(function (t) { return hay.indexOf(t) !== -1; });
-    });
     var none = document.querySelector('.no-results');
     if (none) none.hidden = !!document.querySelector('.cat-group:not([hidden])');
   }
