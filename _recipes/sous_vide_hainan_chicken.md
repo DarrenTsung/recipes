@@ -21,7 +21,7 @@ category: Mains
 ## Instructions:
 
 1. Combine chicken, bones, salt, water, bouillon, ginger, garlic, and scallions in a bag.
-2. Sous vide ~3 hrs at 150°F. 
+2. Sous vide 2 hrs at 150°F.
 3. Chicken into ice water bath 20 min, then slice.
 4. Strain the bag liquid for stock. Use ½ stock + water to the 2.25 level for 2 cups white rice. (Looks like a bit over, but don't worry.)
 
