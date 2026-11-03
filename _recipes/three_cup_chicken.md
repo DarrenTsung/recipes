@@ -27,8 +27,8 @@ Serves 4–6. (Less water than the original, sesame oil moved to the end, no sca
 
 ## Instructions:
 
-1. Neutral oil, ginger, garlic, and chili into the wok over medium heat. Let infuse a couple of minutes.
-2. Turn to high. Add wings in a single layer, sear until golden on both sides.
+1. Wok on high with the neutral oil. Add wings in a single layer, sear until golden on both sides.
+2. Drop to medium, add ginger, garlic, and chili, stir-fry about 1 min until fragrant.
 3. Add water, Shaoxing wine, both soy sauces, and sugar. Stir and cover.
 4. Medium heat, simmer 15 min (20 for more tender). Stir once or twice (less liquid, so check it isn't catching).
 5. Uncover, high heat, reduce a few minutes, stirring often, until the sauce is dark, glossy, and clings to the chicken.
