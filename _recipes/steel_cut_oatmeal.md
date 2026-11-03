@@ -18,3 +18,8 @@ category: Breakfast & Baking
 
 1. Combine everything in a pot and heat.
 2. Simmer on low (4 on induction), stirring occasionally, until the texture is right.
+
+## Variations
+
+- Dried sweetened cranberries, stirred in during cooking.
+- Banana and cinnamon, added after cooking, topped with crushed walnuts.
