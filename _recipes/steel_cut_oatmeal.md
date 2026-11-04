@@ -12,7 +12,7 @@ yield_unit: portions
 ## Ingredients:
 
 - 180g (2½ × ½ cup) Bob's Red Mill quick cooking steel cut oats
-- 5g (3½ × ¼ tsp) salt
+- 2.5g (3½ × ¼ tsp) Diamond Crystal kosher salt
 - 305g (2½ × ½ cup) milk
 - 355g (3 × ½ cup) water
 

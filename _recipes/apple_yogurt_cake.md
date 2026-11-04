@@ -23,7 +23,7 @@ Bake: 350°F, 25–30 min. Mixing steps and pan size inferred (small batch, fits
 - 95g all-purpose flour
 - 2g (½ tsp) baking powder
 - 1.5g (¼ tsp) baking soda
-- 0.75g (⅛ tsp) table salt
+- 0.3g (⅛ tsp) Diamond Crystal kosher salt
 
 ### Topping:
 
