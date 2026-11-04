@@ -1,18 +1,20 @@
 ---
 title: Steel Cut Oatmeal
 category: Breakfast & Baking
+yield: 2.5
+yield_unit: portions
 ---
 
 ## Notes
 
-- 2 adult portions + 1 baby portion.
+- 2 adult portions + 1 baby portion (the portion picker counts the baby portion as ½).
 
 ## Ingredients:
 
-- 1¼ cups (2½ × ½ cup) Bob's Red Mill quick cooking steel cut oats
-- ⅞ tsp (3½ × ¼ tsp) salt
-- 1¼ cups (2½ × ½ cup) milk
-- 1½ cups (3 × ½ cup) water
+- 180g (2½ × ½ cup) Bob's Red Mill quick cooking steel cut oats
+- 5g (3½ × ¼ tsp) salt
+- 305g (2½ × ½ cup) milk
+- 355g (3 × ½ cup) water
 
 ## Instructions:
 

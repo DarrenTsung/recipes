@@ -2,6 +2,7 @@
 title: Eggplant with Garlic Sauce
 category: Vegetables
 native_name: 魚香茄子 (yú xiāng qiézi)
+yield: 2
 ---
 
 ## Source

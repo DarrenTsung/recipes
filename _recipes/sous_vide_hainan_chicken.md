@@ -16,7 +16,7 @@ category: Mains
 ### Rice:
 
 - 2 cups jasmine rice
-- ½ chicken stock (from the bag) + water to the 2.25 mark
+- {:.no-scale} ½ chicken stock (from the bag) + water to the 2.25 mark
 
 ## Instructions:
 

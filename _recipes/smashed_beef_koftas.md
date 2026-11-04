@@ -2,6 +2,7 @@
 title: Smashed Beef Koftas with Yogurt Sauce
 category: Mains
 want_to_try: true
+yield: 4
 ---
 
 ## Source

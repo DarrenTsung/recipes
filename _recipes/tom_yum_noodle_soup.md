@@ -2,6 +2,7 @@
 title: Tom Yum Noodle Soup
 category: Soups & Stews
 want_to_try: true
+yield: 2
 ---
 
 Adapted from: <https://thewoksoflife.com/tom-yum-noodle-soup-kuay-teow-tom-yum/> (simplified with nam prik pao in place of chili flakes, chili vinegar, and garlic oil)

@@ -1,6 +1,7 @@
 ---
 title: Kimchi Soft Tofu Stew
 category: Soups & Stews
+yield: 2
 ---
 
 ## Source

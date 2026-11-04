@@ -14,20 +14,20 @@ Bake: 350°F, 25–30 min. Mixing steps and pan size inferred (small batch, fits
 - 122g whole milk plain yogurt
 - 40g maple syrup
 - 28g unsalted butter, melted and slightly cooled
-- 1 egg, lightly beaten
-- 1 tsp pure vanilla extract
-- 1/2 tbsp apple cider vinegar
+- 50g egg (1 large), lightly beaten
+- 5g (1 tsp) pure vanilla extract
+- 7g (½ tbsp) apple cider vinegar
 
 ### Dry:
 
 - 95g all-purpose flour
-- 1/2 tsp baking powder
-- 1/4 tsp baking soda
-- 1/8 tsp salt
+- 2g (½ tsp) baking powder
+- 1.5g (¼ tsp) baking soda
+- 0.75g (⅛ tsp) table salt
 
 ### Topping:
 
-- 1/3 apple, thinly sliced
+- ~60g apple (⅓ medium), thinly sliced
 
 ## Instructions:
 

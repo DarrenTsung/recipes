@@ -1,6 +1,7 @@
 ---
 title: Tom Yum Goong
 category: Soups & Stews
+yield: 2
 ---
 
 ## Source

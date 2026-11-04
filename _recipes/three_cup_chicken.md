@@ -2,6 +2,7 @@
 title: Three Cup Chicken
 category: Mains
 native_name: 三杯雞 (sān bēi jī)
+yield: 4
 ---
 
 Adapted from: https://thewoksoflife.com/three-cup-chicken-san-bei-ji/

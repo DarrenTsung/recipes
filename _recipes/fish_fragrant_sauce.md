@@ -1,6 +1,7 @@
 ---
 title: Fish Fragrant Sauce
 category: Sauces & Pantry
+yield: 4
 ---
 
 Adapted from: Woks of Life cookbook, Eggplant with Garlic Sauce
