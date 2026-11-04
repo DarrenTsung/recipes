@@ -77,7 +77,7 @@ layout: default
 {%- else -%}
   {%- assign sections = sections | append: notes -%}
 {%- endif -%}
-<article class="recipe{% if page.want_to_try %} is-untried{% endif %}">
+<article class="recipe{% if page.want_to_try %} is-untried{% endif %}"{% if page.yield %} data-yield="{{ page.yield }}" data-yield-unit="{{ page.yield_unit | default: 'servings' }}"{% endif %}>
   <nav class="crumbs">
     <a class="back" href="{{ '/' | relative_url }}{% if page.want_to_try %}#want-to-try{% else %}#recipes{% endif %}">← Recipes</a>
     {%- if page.category %}<span class="eyebrow">{{ page.category }}</span>{% endif %}
