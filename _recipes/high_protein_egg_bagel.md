@@ -25,7 +25,7 @@ yield_unit: bagels
 
 ## Instructions:
 
-1. Preheat oven to 350°F (super convection). Line baking sheet with parchment or silicone mat.
+1. Preheat oven to 350°F (convection). Line baking sheet with parchment or silicone mat.
 2. Whisk flour, baking powder, and salt.
 3. Mix in yogurt and yolks with a fork until crumbly.
 4. Knead on lightly floured surface 15-20 times until smooth and tacky (add flour if sticky).
