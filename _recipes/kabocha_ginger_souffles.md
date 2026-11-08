@@ -18,6 +18,12 @@ Kabocha base can be made several hours ahead (covered, room temp). Soufflés mus
 
 Sub for kabocha: cooked sweet potato or red kuri squash.
 
+Untested tweaks from [Chris Young's make-ahead soufflé](https://chrisyoungcooks.com/make-ahead-chocolate-souffle-recipe/) (scaled to 140g whites):
+- Swiss meringue: whisk whites, sugar, and a pinch of salt over steam to 130°F (54°C), then whip to soft peaks (more stable, harder to overwhip).
+- 0.7g (scant ¼ tsp) cream of tartar in the whites (0.5% of white weight).
+- 0.15g xanthan gum (0.1% of white weight; easiest as 5g of a 3g xanthan + 97g sugar blend, taken out of the 50g sugar).
+- Make ahead: fill ramekins ~1cm below the rim, chill 5 min, invert onto a sheet tray, refrigerate up to 48 hr. Flip and bake straight from the fridge (his chocolate version goes 375°F, ~20 min).
+
 ## Ingredients:
 
 - {:.no-scale} 1 small kabocha squash (1.1kg / 2.5 lb), halved, seeds scooped out
