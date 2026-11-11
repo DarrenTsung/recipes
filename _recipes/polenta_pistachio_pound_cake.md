@@ -1,6 +1,7 @@
 ---
 title: Polenta Pistachio Pound Cake
 category: Breakfast & Baking
+want_to_try: true
 yield: 1
 yield_unit: loaf
 ---
