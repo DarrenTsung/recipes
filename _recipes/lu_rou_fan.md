@@ -25,18 +25,10 @@ Serves 4. About 2 hours, mostly simmering.
 - 45ml (3 Tbsp) light soy sauce
 - 30ml (2 Tbsp) dark soy sauce
 - 475ml (2 cups) water
+- 1 premade braising spice packet (滷包)
 - 4 hard-boiled eggs, peeled (optional)
 - Steamed white rice, to serve
 
-### Spice packet (tied in cheesecloth):
-
-- 3 star anise
-- 1 cinnamon stick
-- 6 cloves
-- 3 bay leaves
-- 2 tsp Sichuan peppercorns
-- 2 pieces dried tangerine peel
-- 2 slices ginger
 
 ## Instructions:
 
