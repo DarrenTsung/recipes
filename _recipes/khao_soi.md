@@ -9,11 +9,13 @@ Adapted from: <https://hot-thai-kitchen.com/kao-soi/> (store-bought curry paste 
 
 ## Notes
 
-Northern Thai curry noodle soup. Drumsticks simmer about 40 min. (Khao soi paste if 99 Ranch has it; otherwise red curry paste plus curry powder and turmeric gets close.)
+Northern Thai curry noodle soup. Drumsticks simmer about 40 min. (Curry powder and turmeric push the red curry paste toward khao soi.)
 
 ## Ingredients:
 
-- 4 Tbsp khao soi curry paste (or 3 Tbsp Mae Ploy red curry paste + 1 tsp curry powder + ½ tsp ground turmeric)
+- ½ tin (2 oz, about 4 Tbsp) Maesri red curry paste
+- 1 tsp curry powder
+- ½ tsp ground turmeric
 - 1½ cups coconut milk, plus extra for drizzling
 - 8 chicken drumsticks
 - 3 cups water
@@ -34,7 +36,7 @@ Northern Thai curry noodle soup. Drumsticks simmer about 40 min. (Khao soi paste
 
 ## Instructions:
 
-1. Boil ½ cup coconut milk on medium. Add curry paste (and curry powder/turmeric if using), stir several minutes until very thick and the oil sizzles at the edges.
+1. Boil ½ cup coconut milk on medium. Add curry paste, curry powder, and turmeric, stir several minutes until very thick and the oil sizzles at the edges.
 2. Add remaining coconut milk, water, both soy sauces, sugar, and drumsticks. Simmer gently on low about 40 min until fork tender. Adjust with fish sauce or salt (add water if too salty).
 3. Boil the noodles (about 3 min, check the package), toss with 1 Tbsp oil, divide into bowls.
 4. 1–2 drumsticks per bowl, ladle over broth, drizzle 1–2 Tbsp coconut milk, top with crispy noodles and cilantro. Serve with the condiments.
