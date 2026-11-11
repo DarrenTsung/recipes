@@ -25,7 +25,7 @@ Serves 4. About 2 hours, mostly simmering.
 - 45ml (3 Tbsp) light soy sauce
 - 30ml (2 Tbsp) dark soy sauce
 - 475ml (2 cups) water
-- 1 premade braising spice packet (滷包)
+- 1 premade braising spice packet (滷包; [Han Con Spice for Spiced Food](https://www.instacart.com/store/99-ranch-market/products/2594618-han-con-spice-for-spiced-food-1-7600-oz?retailerSlug=99-ranch-market) from 99 Ranch)
 - 4 hard-boiled eggs, peeled (optional)
 - Steamed white rice, to serve
 
