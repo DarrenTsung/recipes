@@ -18,7 +18,7 @@ Serves 4. About 2 hours, mostly simmering.
 
 - 450g (1 lb) skin-on pork belly, cut into ½" pieces
 - 2 tsp oil
-- 25g rock sugar (or 1½ Tbsp granulated sugar)
+- 1½ Tbsp sugar
 - 1 small onion or a couple of shallots, diced
 - 8 shiitake mushrooms, diced into ½" pieces
 - 60ml (¼ cup) Shaoxing wine
