@@ -1,7 +1,7 @@
 ---
-title: Lu Rou Fan
+title: Lǔ Ròu Fàn
 category: Rice & Noodles
-native_name: 滷肉飯 (lǔ ròu fàn)
+native_name: 滷肉飯 (Taiwanese braised pork rice)
 want_to_try: true
 yield: 4
 ---

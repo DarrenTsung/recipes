@@ -1,7 +1,7 @@
 ---
-title: Mapo Tofu
+title: Mápó Dòufu
 category: Mains
-native_name: 麻婆豆腐 (má pó dòufu)
+native_name: 麻婆豆腐 (mapo tofu)
 want_to_try: true
 yield: 6
 ---
